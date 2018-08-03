@@ -14,4 +14,4 @@ Electric fabric touchpad "nüno"
 ## フレキシブルコネクタ接続方法 ##
 
 ## 参考 ##
-https://github.com/theapi/touch_timer
+touch_timer(https://github.com/theapi/touch_timer)
