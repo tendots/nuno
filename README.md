@@ -2,7 +2,7 @@
 Electric fabric touchpad "nüno"
 導電布タッチセンサーnünoのコードです。
 
-Facebook page -> (https://www.facebook.com/Project-n%C3%BCno-183796265747425/)
+Facebook page https://www.facebook.com/Project-n%C3%BCno-183796265747425/
 
 ## 仕様 ##
 * 静電容量タッチセンサ　mtch6102(https://www.microchip.com/wwwproducts/en/MTCH6102)
@@ -16,4 +16,4 @@ Facebook page -> (https://www.facebook.com/Project-n%C3%BCno-183796265747425/)
 ## フレキシブルコネクタ接続方法 ##
 
 ## 参考 ##
-touch_timer(https://github.com/theapi/touch_timer)
+[touch_timer](https://github.com/theapi/touch_timer)
