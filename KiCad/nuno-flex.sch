@@ -1,0 +1,193 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:nuno-flex-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Conn_01x10 J10
+U 1 1 5B4C2E7A
+P 8400 3150
+F 0 "J10" H 8400 3650 50  0000 C CNN
+F 1 "Conn_01x10" H 8400 2550 50  0000 C CNN
+F 2 "myLibrary:FPP_CONN_10" H 8400 3150 50  0001 C CNN
+F 3 "" H 8400 3150 50  0001 C CNN
+	1    8400 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P1
+U 1 1 5B4C2EA9
+P 6100 2450
+F 0 "P1" H 6100 2550 50  0000 C CNN
+F 1 "HOCK" H 6100 2350 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 2450 50  0001 C CNN
+F 3 "" H 6100 2450 50  0001 C CNN
+	1    6100 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P2
+U 1 1 5B4C3007
+P 6100 2950
+F 0 "P2" H 6100 3050 50  0000 C CNN
+F 1 "HOCK" H 6100 2850 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 2950 50  0001 C CNN
+F 3 "" H 6100 2950 50  0001 C CNN
+	1    6100 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P3
+U 1 1 5B4C3013
+P 6100 3400
+F 0 "P3" H 6100 3500 50  0000 C CNN
+F 1 "HOCK" H 6100 3300 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 3400 50  0001 C CNN
+F 3 "" H 6100 3400 50  0001 C CNN
+	1    6100 3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P4
+U 1 1 5B4C3042
+P 6100 3850
+F 0 "P4" H 6100 3950 50  0000 C CNN
+F 1 "HOCK" H 6100 3750 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 3850 50  0001 C CNN
+F 3 "" H 6100 3850 50  0001 C CNN
+	1    6100 3850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P5
+U 1 1 5B4C306B
+P 6100 4250
+F 0 "P5" H 6100 4350 50  0000 C CNN
+F 1 "HOCK" H 6100 4150 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 4250 50  0001 C CNN
+F 3 "" H 6100 4250 50  0001 C CNN
+	1    6100 4250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P7
+U 1 1 5B4C3318
+P 6100 4750
+F 0 "P7" H 6100 4850 50  0000 C CNN
+F 1 "HOCK" H 6100 4650 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 4750 50  0001 C CNN
+F 3 "" H 6100 4750 50  0001 C CNN
+	1    6100 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P8
+U 1 1 5B4C331E
+P 6100 5250
+F 0 "P8" H 6100 5350 50  0000 C CNN
+F 1 "HOCK" H 6100 5150 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 5250 50  0001 C CNN
+F 3 "" H 6100 5250 50  0001 C CNN
+	1    6100 5250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 P9
+U 1 1 5B4C3324
+P 6100 5700
+F 0 "P9" H 6100 5800 50  0000 C CNN
+F 1 "HOCK" H 6100 5600 50  0000 C CNN
+F 2 "myLibrary:Hock_4mm" H 6100 5700 50  0001 C CNN
+F 3 "" H 6100 5700 50  0001 C CNN
+	1    6100 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 2450 8200 2450
+Wire Wire Line
+	8200 2450 8200 2750
+Wire Wire Line
+	8200 2850 6300 2850
+Wire Wire Line
+	6300 2850 6300 2950
+Wire Wire Line
+	8200 2950 6400 2950
+Wire Wire Line
+	6400 2950 6400 3400
+Wire Wire Line
+	6400 3400 6300 3400
+Wire Wire Line
+	8200 3050 6500 3050
+Wire Wire Line
+	6500 3050 6500 3850
+Wire Wire Line
+	6500 3850 6300 3850
+Wire Wire Line
+	8200 3150 6600 3150
+Wire Wire Line
+	6600 3150 6600 4250
+Wire Wire Line
+	6600 4250 6300 4250
+Wire Wire Line
+	8200 3250 6700 3250
+Wire Wire Line
+	6700 3250 6700 4800
+Wire Wire Line
+	6700 4800 6300 4800
+Wire Wire Line
+	6300 4800 6300 4750
+Wire Wire Line
+	8200 3350 6800 3350
+Wire Wire Line
+	6800 3350 6800 5250
+Wire Wire Line
+	6800 5250 6300 5250
+Wire Wire Line
+	8200 3450 6950 3450
+Wire Wire Line
+	6950 3450 6950 5700
+Wire Wire Line
+	6950 5700 6300 5700
+NoConn ~ 8200 3550
+NoConn ~ 8200 3650
+$EndSCHEMATC
