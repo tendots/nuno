@@ -2,6 +2,8 @@
 Electric fabric touchpad "nüno"
 導電布タッチセンサーnünoのコードです。
 
+Facebook page -> (https://www.facebook.com/Project-n%C3%BCno-183796265747425/)
+
 ## 仕様 ##
 * 静電容量タッチセンサ　mtch6102(https://www.microchip.com/wwwproducts/en/MTCH6102)
 * タッチチャンネル数8
