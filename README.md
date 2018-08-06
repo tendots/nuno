@@ -17,7 +17,7 @@ Electric fabric touchpad "nüno"
 逆につけた取り付けた場合、すべてのチャンネルの値が取得できません。
 
 ## フレキシブル基板コネクタ接続方法 ##
-![dsc_0804](https://user-images.githubusercontent.com/1772744/43695212-3602c61a-9972-11e8-82d1-fd918a33488e.jpg)
+![dsc_0804](https://user-images.githubusercontent.com/1772744/43695231-51209878-9972-11e8-8ecd-2b300c868b3a.jpg)
 
 フレキシブル基板のコネクタは、リジット基板のFPCコネクタに接続後、
 画像のようにフレキシブル基板と布を両方挟み込むようにして、
