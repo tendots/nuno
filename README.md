@@ -11,13 +11,13 @@ Electric fabric touchpad "nüno"
 * コネクタ GROVEコネクタ(I2C)
 
 ## 導線部接続方法
-https://user-images.githubusercontent.com/1772744/43694801-1fe4aa3a-9970-11e8-96b2-6911c2a84bb4.JPG
+![dsc_0798](https://user-images.githubusercontent.com/1772744/43694801-1fe4aa3a-9970-11e8-96b2-6911c2a84bb4.JPG)
 
 導線部（細長い方）は画像のように、縫い目がセンサー部（四角い方）の外縁に向くように接続してください。
 逆につけた取り付けた場合、すべてのチャンネルの値が取得できません。
 
 ## フレキシブル基板コネクタ接続方法 ##
-https://user-images.githubusercontent.com/1772744/43694897-90800ca8-9970-11e8-9747-4d1033866c79.JPG
+![dsc_0804](https://user-images.githubusercontent.com/1772744/43694897-90800ca8-9970-11e8-9747-4d1033866c79.JPG)
 
 フレキシブル基板のコネクタは、リジット基板のFPCコネクタに接続後、
 画像のようにフレキシブル基板と布を両方挟み込むようにして、
