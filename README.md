@@ -1,7 +1,7 @@
 # nuno
-Electric fabric touchpad "nüno"
+Electric fabric touchsensor module "nüno"
 
-導電布タッチセンサーnünoのコードです。
+導電布タッチセンサーモジュールnünoのコードです。
 
 質問や要望などあればこのページかFacebookページへご連絡ください。
 * Facebook page https://www.facebook.com/Project-n%C3%BCno-183796265747425/
