@@ -1,6 +1,4 @@
 #include <M5Stack.h>
-
-
 #include <Arduino.h>
 #include <Wire.h>
 #include "MTCH6102.h"
@@ -10,9 +8,7 @@
 MTCH6102 mtch = MTCH6102();
 int len = 8;
 
-void setup() {
- delay(1000);
- 
+void setup() { 
  byte data;
 
   // Initialize the M5Stack object
@@ -26,22 +22,12 @@ void setup() {
   //Wire.begin();
   mtch.begin();
   mtch.writeRegister(MTCH6102_MODE, MTCH6102_MODE_STANDBY);
-  mtch.writeRegister(MTCH6102_NUMBEROFXCHANNELS, 0x10 );
+  mtch.writeRegister(MTCH6102_NUMBEROFXCHANNELS, 0x08);
   mtch.writeRegister(MTCH6102_NUMBEROFYCHANNELS, 0x03);//最低3点必要なため
   mtch.writeRegister(MTCH6102_MODE, MTCH6102_MODE_FULL);
   
-  mtch.writeRegister(MTCH6102_CMD, 0x20);
-  delay(500);
-  
+
   // the operating mode (MODE)
-  data = mtch.readRegister(MTCH6102_MODE);
-  Serial.print("MODE: ");
-  Serial.println(data,BIN);
-
-  // Set mode to Touch only
-  //mtch.writeRegister(MTCH6102_MODE, 0x02);
-
-
   data = mtch.readRegister(MTCH6102_MODE);
   Serial.print("MODE: ");
   Serial.println(data,BIN);
@@ -53,16 +39,9 @@ void setup() {
   data = mtch.readRegister(MTCH6102_NUMBEROFYCHANNELS);
   Serial.print("NUMBEROFYCHANNELS: ");
   Serial.println(data);
-
-
-  data = mtch.readRegister(MTCH6102_NUMBEROFXCHANNELS);
-  Serial.print("NUMBEROFXCHANNELS: ");
-  Serial.println(data);
-
- data = mtch.readRegister(MTCH6102_NUMBEROFYCHANNELS);
-  Serial.print("NUMBEROFYCHANNELS: ");
-  Serial.println(data);
   
+  mtch.writeRegister(MTCH6102_CMD, 0x20);
+  delay(500);
 }
 
 void loop() {

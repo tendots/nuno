@@ -13,12 +13,12 @@ boolean MTCH6102::begin(uint8_t i2caddr) {
 }
 
 uint8_t MTCH6102::readRegister(uint8_t reg) {
+  byte error;
   Wire.beginTransmission(_i2caddr);
   Wire.write(reg); // register to read
-  Wire.endTransmission(false);
+  //Wire.endTransmission(false);
+  error = Wire.endTransmission();
   // read a byte
-  //delayMicroseconds(10);
-  //delayいれたがendTransmission()にfalse入れたほうが応答いい
   while (Wire.requestFrom(_i2caddr, 1) != 1);
   return ( Wire.read());
 }
