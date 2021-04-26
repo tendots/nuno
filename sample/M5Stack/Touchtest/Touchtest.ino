@@ -1,6 +1,4 @@
 #include <M5Stack.h>
-#include <Arduino.h>
-#include <Wire.h>
 #include "MTCH6102.h"
 #define ADDR 0x25
 #define ScreenWidth 320
@@ -10,15 +8,18 @@ MTCH6102 mtch = MTCH6102();
 int len = 8;
 
 void setup() { 
- byte data;
 
   // Initialize the M5Stack object
   M5.begin();
-  M5.Lcd.fillScreen(TFT_BLACK);
+  //Wire.begin();
+  M5.Power.begin();
 
-   //I2c.begin();
+ 
   
-  Serial.begin(115200);
+  //Serial.begin(115200);
+  delay(100);
+  Serial.println();
+  Serial.println("start");
   
   //Wire.begin();
   mtch.begin();
@@ -27,6 +28,7 @@ void setup() {
   mtch.writeRegister(MTCH6102_NUMBEROFYCHANNELS, 0x03);//最低3点必要なため
   mtch.writeRegister(MTCH6102_MODE, MTCH6102_MODE_FULL);
   
+  byte data;
 
   // the operating mode (MODE)
   data = mtch.readRegister(MTCH6102_MODE);
@@ -48,7 +50,6 @@ void setup() {
 }
 
 void loop() {
-  //M5.lcd.clear();
   M5.Lcd.setCursor(0, 70);
   
   byte data; 
@@ -65,7 +66,7 @@ void loop() {
   Serial.print("SENSORVALUE_RX <i>: ");
   //for (byte i = MTCH6102_SENSORVALUE_RX0; i < MTCH6102_SENSORVALUE_RX0+10; i++) {
   for (int i = 0; i < len; i++) {
-     data = mtch.readRegister(MTCH6102_SENSORVALUE_RX0+i);
+     data = mtch.readRegister(MTCH6102_SENSORVALUE_RX0+(i+2));
      
     Serial.print(data);
     Serial.print(", ");
@@ -93,7 +94,8 @@ void loop() {
     
     M5.Lcd.drawLine(leftMargin+(i*35), 200-(prev/255)*200, leftMargin+((i+1)*35), 200-(current/255)*200, TFT_WHITE);
   }
-  delay(100);
+  delay(50);
+  
 
   
   //グラフ線の消去
@@ -113,7 +115,6 @@ void loop() {
    
   Serial.println();
   M5.Lcd.println();
+  M5.update();
   
-  //delay(100);
  }
-
